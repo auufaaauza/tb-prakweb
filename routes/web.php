@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +18,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
-Route::get('/event', [HomeController::class, 'event'])->name('event');
-Route::get('/event/{slug}', [HomeController::class, 'detail'])->name('event.detail');
-Route::post('/order/{slug}', [HomeController::class, 'createOrder'])->name('order.store');
+Route::get('/event', [EventController::class, 'event'])->name('event');
+Route::get('/event/{slug}', [EventController::class, 'detail'])->name('event.detail');
+Route::post('/order/{slug}', [OrderController::class, 'createOrder'])->name('order.store');

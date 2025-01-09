@@ -42,7 +42,7 @@
                                     </div>
                                     <div class="ul-team-card-socials-icon"><i class="flaticon-share"></i></div>
                                 </div>
-                                <h4 class="ul-team-card-title"><a href="team-details.html">Auufaaauza</a></h4>
+                                <h4 class="ul-team-card-title"><a href="team-details.html">Aufa</a></h4>
                                 <span class="ul-team-card-subtitle">Call <a href="tel:01236547890">+0123 654 7890</a></span>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                                     </div>
                                     <div class="ul-team-card-socials-icon"><i class="flaticon-share"></i></div>
                                 </div>
-                                <h4 class="ul-team-card-title"><a href="team-details.html">John Doe</a></h4>
+                                <h4 class="ul-team-card-title"><a href="team-details.html">Dela</a></h4>
                                 <span class="ul-team-card-subtitle">Call <a href="tel:01236547890">+0123 654 7890</a></span>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                                     </div>
                                     <div class="ul-team-card-socials-icon"><i class="flaticon-share"></i></div>
                                 </div>
-                                <h4 class="ul-team-card-title"><a href="team-details.html">John Doe</a></h4>
+                                <h4 class="ul-team-card-title"><a href="team-details.html">Firzha</a></h4>
                                 <span class="ul-team-card-subtitle">Call <a href="tel:01236547890">+0123 654 7890</a></span>
                             </div>
                         </div>
