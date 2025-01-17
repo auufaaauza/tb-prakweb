@@ -171,7 +171,7 @@
                                         <div class="top">
                                             <div class="left">
                                                 <span class="ul-project-price"><span class="number">{{ $value->harga }}</span></span>
-                                                <a href="project-details.html" class="ul-project-title">{{ $value->name }}</a>
+                                                <a href="event/{{ $value->slug}}" class="ul-project-title">{{ $value->name }}</a>
                                                 <p class="ul-project-location">{{ $value->address }}</p>
                                             </div>
                                         </div>

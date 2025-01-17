@@ -3,7 +3,7 @@
     <!-- header -->
     <div class="ul-sidebar-header">
         <div class="ul-sidebar-header-logo">
-            <a href="index.html">
+            <a href="home">
                 <img src="assets/img/logo-dark.svg" alt="logo" class="logo">
             </a>
         </div>

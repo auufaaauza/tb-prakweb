@@ -17,21 +17,28 @@ class OrderController extends Controller
             'quantity' => 'required',
             'payment_method' => 'required',
         ]);
+        
+        // Clean currency format
+        $total = (int) preg_replace('/[Rp. ]/', '', $request->total);
+        
         $event = Event::where('slug', $slug)->first();
+        
         if ($event->quota >= $request->quantity) {
             $order = Order::create([
                 'event_id' => $event->id,
                 'name' => $request->name,
                 'phone_number' => $request->phone_number,
                 'quantity' => $request->quantity,
-                'total' => $request->total,
+                'total' => $total, // Using cleaned total value
                 'payment_method' => $request->payment_method
             ]);
+            
             if ($order) {
                 $event->update([
                     'quota' => $event->quota - $request->quantity
                 ]);
             }
+            
             return view('thankyou', compact('order'));
         } else {
             return redirect()->route('event.detail', $event->slug)->with('error','Tiket sudah habis!');
